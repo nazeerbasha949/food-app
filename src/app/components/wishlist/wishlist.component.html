@@ -1,0 +1,21 @@
+<table class="table table-bordered">
+    <tr>
+        <th>Sno</th>
+        <th>Product Name</th>
+        <th>Product Price</th>
+        <th>Product Description</th>
+        <th>Product Image</th>
+        <th>Manage</th>
+    </tr>
+    <tr *ngFor="let w of wishlist; index as i">
+        <td>{{i+1}}</td>
+        <td>{{w.productName}}</td>
+        <td>{{w.productPrice}}</td>
+        <td>{{w.productDescription}}</td>
+        <td><img [src]="w.productImage" alt="" height="100" width="100"></td>
+        <td><button class="btn btn-info" (click)="deleteProductById(w.productId)">Delete</button></td>
+    </tr>
+
+</table>
+<h4 class="price">Total Price: ₹{{ price }}</h4>
+<button class="btn btn-primary" (click)="buyNow()">BuyAll</button>

@@ -1,0 +1,19 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <nav class="navbar navbar-expand-md nav1">
+                <div class="navbar-brand">
+                    <ul class="navbar-nav nav2">
+                        <li class="nav-item"><a routerLink="/admin/add" class="nav-link">Add new Items</a></li>
+                        <li class="nav-item"><a routerLink="/admin/manage" class="nav-link">Manage</a></li>
+                        <li class="nav-item"><a routerLink="/admin/viewbooking" class="nav-link">View Bookings</a></li>
+                        <li class="nav-item"><a routerLink="#" class="nav-link" (click)="logout()">Logout</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+<router-outlet></router-outlet>
+
+

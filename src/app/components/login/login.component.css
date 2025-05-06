@@ -1,0 +1,38 @@
+.div{
+    background-image: url('https://cdn.shopify.com/s/files/1/0051/4159/4210/articles/Sweet.jpg?v=1655875774');
+    width: 100vw;   /* Full viewport width */
+    height: 100vh;  /* Full viewport height */
+    display: flex;  /* Optional: Centers content */
+    justify-content: center;
+    align-items: center;
+    color: white;   /* Makes text visible */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.div1{
+    border-radius: 10px;
+    height:250px;
+    color: black;
+    position: relative;
+    top: -200px;
+    left: 400px;
+    background-color:lightgrey;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: slideDown 0.7s ease-out;
+}
+.b1{
+    position:relative;
+    left: 150px;
+    top:40px;
+}
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

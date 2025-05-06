@@ -1,0 +1,11 @@
+.div{
+    background-image: url('https://images.squarespace-cdn.com/content/v1/651ec4aa5dbb4f211ad865e5/a38e194b-e707-4ea9-9145-12bc27c0bdb4/WEBSITE+STOCK+PHOTOS+%2858%29.png');
+    width: 100vw;   
+    height: 100vh;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    color: white; 
+    background-repeat: no-repeat;
+    background-size: cover;
+}

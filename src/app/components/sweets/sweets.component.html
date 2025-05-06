@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-3" *ngFor="let s of sweets">
+            <div class="image-container">
+                <img [src]="s.productImage" alt="Product">
+                <a routerLink="#" (click)="openView(s.productId)">
+                <div class="hover-overlay">
+                    <button class="hover-button">View More</button>
+                </div>
+                </a>
+            </div>     
+            <p>{{s.productName}}</p>
+            <p>{{s.productPrice | currency:"INR"}}</p>   
+        </div>
+    </div>
+</div>
+
+
+
+
+

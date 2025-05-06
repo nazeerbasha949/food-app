@@ -1,0 +1,42 @@
+<!--<div class="container">
+    <img src="https://img.freepik.com/premium-vector/logo-food-company-that-says-sun-sun-sunflower_917213-253424.jpg?semt=ais_hybrid" alt="" height="150"  width="150">
+    <p class="p1">Andhra <br> Vantillu</p>
+    <button type="submit" class="btn btn-success b1" routerLink="/login">login</button>
+</div>-->
+<div class="div">
+    <p class="p1">Authentic Andhra Cuisine</p>
+    <div class="text">
+        <div class="t1" >
+            A Symphony of spices, a dance of flavors.
+        </div>
+        <div class="t2">
+            A taste of tradition, a pinch of love.
+        </div>
+        <div class="t3">
+            Where every bite tells a story, every flavor evokes memory.
+        </div>
+    </div>
+    
+    <button type="submit" class="btn btn-secondary b1" routerLink="/login">Order up!!!<br>Login</button>
+    <div class="b2">
+        <a href="#myid"></a><button class="btn btn-secondary">View</button>
+    </div>
+</div>
+<div class="container" id="myid">
+    <div class="row">
+        <h2>Delicious Items</h2>
+            <h4>Food Items</h4>
+        <div class="col-md-3" *ngFor="let s of items">
+            <div class="image-container">
+                <img [src]="s.productImage" alt="Product">
+                <a routerLink="#" (click)="openView()">
+                <div class="hover-overlay">
+                    <button class="hover-button">View More</button>
+                </div>
+                </a>
+            </div>     
+            <p>{{s.productName}}</p> 
+        </div>
+    </div>
+</div>
+<router-outlet></router-outlet>

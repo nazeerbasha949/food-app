@@ -1,0 +1,27 @@
+<div class="container-fluid">
+    <div class="row">
+            <nav class="navbar navbar-expand-md nav1">
+                <div class="navbar-brand">
+                    <ul class="navbar-nav nav2">
+                        <li class="nav-item"><a routerLink="/user/hot" class="nav-link">Hot Chips</a></li>
+                        <li class="nav-item"><a routerLink="/user/sweet" class="nav-link">Sweets</a></li>
+                        <li class="nav-item"><a routerLink="/user/vadiyalu" class="nav-link">Vadiyalu</a></li>
+                        <li class="nav-item"><a routerLink="/user/andhra" class="nav-link">Andhra Specials</a></li>
+                        <li class="nav-item"><a routerLink="/user/podulu" class="nav-link">Podulu</a></li>
+                        <li class="nav-item"><a routerLink="/user/pickels" class="nav-link">Pickels</a></li>
+                        <li class="nav-item profile-dropdown">
+                            <a class="nav-link" data-bs-toggle="dropdown">Profile <i class="fa-solid fa-user"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a routerLink="/profile/wishlist" class="dropdown-item">Wishlist<span class="badge bg-danger">{{len}}</span>
+                                </a></li>
+                                <li><a routerLink="/profile/mybooking" class="dropdown-item">My Bookings</a></li>
+                                <li class="nav-item"><a routerLink="#" class="nav-link" (click)="logout()">Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+    </div>
+</div>
+<router-outlet></router-outlet>
+

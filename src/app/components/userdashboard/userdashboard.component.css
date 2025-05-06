@@ -1,0 +1,77 @@
+.nav1{
+    background-color: white;
+    color: black;
+    height: 80px;
+    width: 100%;
+    border-bottom: 1px solid lightgrey;
+    border-top: 1px solid lightgrey;
+}
+.nav2{
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-style: normal;
+    position: relative;
+    left: 500px;
+}
+.fa-user{
+    position: relative;
+    left: 10px;
+}
+/* Profile dropdown container */
+.profile-dropdown {
+    position: relative;
+    display: inline-block;
+    left: 350px;
+}
+
+/* Hide dropdown menu initially */
+.profile-dropdown .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 150px;
+    z-index: 1000;
+    list-style: none;
+    padding: 5px 0;
+    border: none; /* Removes the border */
+}
+
+/* Show dropdown on hover */
+.profile-dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Style dropdown items */
+.profile-dropdown .dropdown-menu li {
+    padding: 8px 15px;
+}
+
+/* Style dropdown links */
+.profile-dropdown .dropdown-menu li a {
+    color: black; /* Default text color */
+    text-decoration: none;
+    display: block;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Remove blue color when clicking */
+.profile-dropdown .dropdown-menu li a:active,
+.profile-dropdown .dropdown-menu li a:focus,
+.profile-dropdown .dropdown-menu li a:hover {
+    background-color: #f1f1f1; /* Light grey on hover */
+    color: black; /* Keep text black */
+    text-decoration: none;
+    outline: none;
+    box-shadow: none;
+}
+
+/* Remove blue focus color when clicking */
+.nav-link:focus,
+.nav-link:active {
+    color: black !important;
+    background-color: transparent !important;
+    outline: none !important;
+    box-shadow: none !important;
+}

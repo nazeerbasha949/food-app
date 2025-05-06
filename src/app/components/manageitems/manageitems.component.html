@@ -1,0 +1,58 @@
+<table class="table table-bordered">
+    <tr>
+        <th>Product Id</th>
+        <th>Product Name</th>
+        <th>Product Description</th>
+        <th>Product Type</th>
+        <th>Product Price</th>
+        <th>Product Image</th>
+        <th>Manage</th>
+    </tr>
+    <tr *ngFor="let n of newitems">
+        <td>{{n.productId}}</td>
+        <td>{{n.productName}}</td>
+        <td>{{n.productDescription}}</td>
+        <td>{{n.productType}}</td>
+        <td>{{n.productPrice}}</td>
+        <td><img [src]="n.productImage" alt="" height="100" width="100"></td>
+        <td><button class="btn btn-primary" (click)="deleteProductById(n.productId)">Delete</button></td>
+        <td><button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#updatemodal" (click)="updateToDummy(n)">update</button></td>
+    </tr>
+</table>
+<div *ngIf="dummy">
+    <div class="modal fade" id="updatemodal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>update product</h3>
+                    <button class="btn btn-close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="" ngNativeValidate>
+                        <div class="form-group">
+                            <label for="" class="form-label">Product Id</label>
+                            <input type="text" name="vid" [(ngModel)]="dummy.productId" class="form-control" disabled="">
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="form-label">Product Name</label>
+                            <input type="text" name="vname" [(ngModel)]="dummy.productName" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="form-label">Product Price</label>
+                            <input type="text" name="vprice" [(ngModel)]="dummy.productPrice" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="form-label">product Description</label>
+                            <input type="text" name="vdes" [(ngModel)]="dummy.productDescription">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-success" (click)="updateNow()" data-bs-dismiss="modal">updatenow</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

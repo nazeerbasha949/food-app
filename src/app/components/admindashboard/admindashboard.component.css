@@ -1,0 +1,16 @@
+.nav1{
+    color: black;
+    height: 80px;
+    width: 100%;
+    border-bottom: 0px solid grey;
+    border-top: 0px solid grey;
+}
+.nav2{
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-style: normal;
+    position: relative;
+    left: 570px;
+}
+
